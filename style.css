@@ -1,0 +1,17 @@
+.container>div {
+    color: aliceblue;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* .container>div:nth-child(even){
+    background-color: green ;
+
+
+}
+.container>div:nth-child(odd){
+    background-color: blue ;
+} */

@@ -1,0 +1,84 @@
+.container{
+    display: grid;
+
+    /* for columns or row tempate */
+
+
+    /* grid-template-columns:repeat(12 , 1fr);  */
+    /* grid-template-rows:repeat(3 , 100px);  */
+
+    /* grid-template-columns:1fr 2fr 1fr; */
+    /* grid-template-row:1fr 2fr 1fr; */
+
+    /* grid-template-columns:100px auto 200px; */
+    grid-template-rows : 88px 300px 100px;
+
+
+    /* new metod with grid.area */
+
+    grid-template-areas: 
+        "m m h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "m m f f f f f f f f f f"
+        "m m f f f f f f f f f f"
+    ;
+
+
+    /* for padding */
+
+    /* row-gap: 1px;  */
+    /* column-gap: 1px;  */
+
+    gap: 1px;
+
+}
+
+
+/* the first */
+
+/* .header{
+    background-color:#27ae60;
+    grid-column: 2 / -1;
+
+}
+.content{
+    background-color:#2980b9 ;
+    grid-column: 2 / -1 ;
+}
+.menu{
+    background-color:#e74c3c ;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.footer{
+    background-color:#f39c12 ;
+    grid-column: 1 / -1 ;
+
+} */
+
+
+/* secoud metod */
+
+
+.header{
+    background-color:#27ae60;
+    grid-area: h ;
+    
+
+}
+.content{
+    background-color:#2980b9 ;
+    grid-area: c;
+    
+}
+.menu{
+    background-color:#e74c3c ;
+    grid-area: m;
+    
+    
+}
+.footer{
+    background-color:#f39c12 ;
+    grid-area: f;
+
+}
